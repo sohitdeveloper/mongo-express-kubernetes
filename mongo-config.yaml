@@ -1,0 +1,7 @@
+# maintain the configuration required for the mongo-service (in config map we usually maintain the public key value pair which is not secret key.)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+data:
+  mongo-url: mongo-service
